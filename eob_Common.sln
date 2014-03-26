@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "eob_Common", "eob_Common.vcxproj", "{865F87B7-CF30-4F89-942A-1B4A0DDD3018}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "eob_Test_Common", "eob_Test_Common.vcxproj", "{24943D10-C15E-4B5D-85AF-FF7D41BA5238}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{865F87B7-CF30-4F89-942A-1B4A0DDD3018}.Debug|Win32.ActiveCfg = Debug|Win32
+		{865F87B7-CF30-4F89-942A-1B4A0DDD3018}.Debug|Win32.Build.0 = Debug|Win32
+		{865F87B7-CF30-4F89-942A-1B4A0DDD3018}.Release|Win32.ActiveCfg = Release|Win32
+		{865F87B7-CF30-4F89-942A-1B4A0DDD3018}.Release|Win32.Build.0 = Release|Win32
+		{24943D10-C15E-4B5D-85AF-FF7D41BA5238}.Debug|Win32.ActiveCfg = Debug|Win32
+		{24943D10-C15E-4B5D-85AF-FF7D41BA5238}.Debug|Win32.Build.0 = Debug|Win32
+		{24943D10-C15E-4B5D-85AF-FF7D41BA5238}.Release|Win32.ActiveCfg = Release|Win32
+		{24943D10-C15E-4B5D-85AF-FF7D41BA5238}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
