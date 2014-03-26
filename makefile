@@ -6,8 +6,11 @@ eob_Common.so: c_dummy.o
 c_dummy.o: c_dummy.cpp
 	g++ -c -fPIC -o c_dummy.o c_dummy.cpp
 
-eob_Test_Common: test_c_dummy.o
+eob_Test_Common: test_c_main.o test_c_dummy.o
 	g++ -o eob_Test_Common test_c_dummy.o
+
+test_c_main.o: test_c_main.cpp
+	g++ -c -fPIC -o test_c_main.o test_c_main.cpp
 
 test_c_dummy.o: test_c_dummy.cpp
 	g++ -c -fPIC -o test_c_dummy.o test_c_dummy.cpp
