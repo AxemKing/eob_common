@@ -6,5 +6,6 @@ namespace EOB
 	{
 	public:
 		DummyClass();
+		int Add(int _a, int _b);
 	};
 }

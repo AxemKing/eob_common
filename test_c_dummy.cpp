@@ -9,5 +9,11 @@ namespace EOB
 		{
 			DummyClass l_dummy;
 		}
+
+		TEST(DUMMY, CAN_MATH)
+		{
+			DummyClass l_dummy;
+			EXPECT_EQ(9, l_dummy.Add(5, 4));
+		}
 	}
 }
