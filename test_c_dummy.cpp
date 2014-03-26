@@ -1,9 +1,13 @@
-#include "dummy.h"
+#include "gtest/gtest.h"
+#include "c_dummy.h"
 
-namespace
+namespace EOB
 {
-	TEST(DUMMY, CAN_BE_CREATED)
+	namespace Test
 	{
-		DummyClass l_dummy;
+		TEST(DUMMY, CAN_BE_CREATED)
+		{
+			DummyClass l_dummy;
+		}
 	}
 }

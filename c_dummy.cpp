@@ -1,4 +1,4 @@
-#include "dummy.h"
+#include "c_dummy.h"
 
 namespace EOB
 {

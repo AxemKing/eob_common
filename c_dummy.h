@@ -6,5 +6,5 @@ namespace EOB
 	{
 	public:
 		DummyClass();
-	}
+	};
 }
