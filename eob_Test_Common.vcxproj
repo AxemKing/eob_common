@@ -56,6 +56,9 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>gtestd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>"$(OutDir)$(TargetName)$(TargetExt)" &gt; "$(OutDir)$(TargetName).txt"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -73,11 +76,18 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
+    <PostBuildEvent>
+      <Command>"$(OutDir)$(TargetName)$(TargetExt)" &gt; "$(OutDir)$(TargetName).txt"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="c_dummy.cpp" />
     <ClCompile Include="test_c_dummy.cpp" />
     <ClCompile Include="test_c_main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="eob_Common.vcxproj">
+      <Project>{865f87b7-cf30-4f89-942a-1b4a0ddd3018}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
